@@ -1,16 +1,24 @@
 import React from "react";
+import {type} from "os";
 
-const Tehnologies = (props: any) => {
+type TehnologiesPropsType = {
+    titleValue: string
+}
+const Tehnologies = (props: TehnologiesPropsType) => {
     return (
         <div>
-       <TehnologiesTitle />
+       <TehnologiesTitle title ={props.titleValue} />
         <TehnologiesBody />
         </div>
     )
 
 }
-const TehnologiesTitle = () => {
-    return <h3>Меню</h3>
+
+type TehnoloiesTitlePropsType = {
+    title: string
+}
+const TehnologiesTitle = (props: TehnoloiesTitlePropsType) => {
+    return <h3>{props.title}</h3>
 }
 
 

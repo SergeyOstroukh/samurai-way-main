@@ -6,7 +6,7 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <div className="App">
-        <Tehnologies title = {1}  />
+        <Tehnologies titleValue = {"Menu"}  />
         <Header />
     </div>
   );
